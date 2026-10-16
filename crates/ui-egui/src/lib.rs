@@ -1158,7 +1158,7 @@ impl SheetApp {
         }
         // Window title.
         let title = if let Some(d) = self.session.active() {
-            format!("{}{}", d.display_title(), if d.is_dirty() { " — Edited" } else { "" })
+            format!("{} - Lunola Cella{}", d.display_title(), if d.is_dirty() { " — Edited" } else { "" })
         } else {
             "Lunola Cella".to_string()
         };

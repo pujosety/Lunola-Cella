@@ -702,8 +702,9 @@ pub fn apply(ctx: &egui::Context, dark: bool) {
     ctx.set_theme(if dark { egui::Theme::Dark } else { egui::Theme::Light });
     ctx.all_styles_mut(|s| {
         s.spacing.item_spacing = egui::vec2(6.0, 4.0);
-        s.spacing.button_padding = egui::vec2(6.0, 3.0);
-        s.spacing.interact_size.y = 22.0;
+        s.spacing.button_padding = egui::vec2(8.0, 3.0);
+        s.spacing.interact_size = egui::vec2(24.0, 22.0);
+        s.spacing.menu_margin = egui::Margin::same(6);
         s.text_styles.insert(egui::TextStyle::Body, ui_font(13.0));
         s.text_styles.insert(egui::TextStyle::Button, ui_font(13.0));
         s.text_styles.insert(egui::TextStyle::Small, ui_font(11.0));
