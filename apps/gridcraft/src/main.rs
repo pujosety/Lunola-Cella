@@ -1,4 +1,4 @@
-//! GridCraft desktop app.
+//! Lunola Cella desktop app.
 //!
 //! Usage: `gridcraft [--control <port>] [--sample <name>] [files…]`
 //!
@@ -75,9 +75,9 @@ impl eframe::App for App {
 
 fn config_dir() -> Option<std::path::PathBuf> {
     if cfg!(target_os = "macos") {
-        std::env::var_os("HOME").map(|h| std::path::PathBuf::from(h).join("Library/Application Support/GridCraft"))
+        std::env::var_os("HOME").map(|h| std::path::PathBuf::from(h).join("Library/Application Support/Lunola Cella"))
     } else if cfg!(windows) {
-        std::env::var_os("APPDATA").map(|a| std::path::PathBuf::from(a).join("GridCraft"))
+        std::env::var_os("APPDATA").map(|a| std::path::PathBuf::from(a).join("Lunola Cella"))
     } else {
         std::env::var_os("XDG_CONFIG_HOME")
             .map(std::path::PathBuf::from)
@@ -222,9 +222,9 @@ fn open_with_system(target: &str) {
 
 fn icon() -> Option<egui::IconData> {
     #[cfg(target_os = "macos")]
-    let bytes = include_bytes!("../../../assets/app-icon/gridcraft-macos-512.png");
+    let bytes = include_bytes!("../../../assets/app-icon/gridcraft-512.png");
     #[cfg(not(target_os = "macos"))]
-    let bytes = include_bytes!("../../../assets/app-icon/hicolor/256x256/apps/ai.storyteller.gridcraft.png");
+    let bytes = include_bytes!("../../../assets/app-icon/gridcraft-256.png");
     let img = image::load_from_memory(bytes).ok()?.to_rgba8();
     Some(egui::IconData { width: img.width(), height: img.height(), rgba: img.into_raw() })
 }
@@ -252,7 +252,7 @@ fn main() -> eframe::Result<()> {
     }));
     let args: Vec<String> = std::env::args().skip(1).collect();
     if args.iter().any(|a| a == "--version" || a == "-V") {
-        println!("GridCraft {}", env!("CARGO_PKG_VERSION"));
+        println!("Lunola Cella {}", env!("CARGO_PKG_VERSION"));
         return Ok(());
     }
     let mut control_port: Option<u16> = std::env::var("GRIDCRAFT_CONTROL_PORT").ok().and_then(|p| p.parse().ok());
@@ -281,7 +281,7 @@ fn main() -> eframe::Result<()> {
     if let Some(logger) = logger {
         match log_dir().filter(|_| prefs_enabled()) {
             Some(dir) => match logger.attach_dir(&dir) {
-                Ok(path) => log::info!("GridCraft {}, log file {}", env!("CARGO_PKG_VERSION"), path.display()),
+                Ok(path) => log::info!("Lunola Cella {}, log file {}", env!("CARGO_PKG_VERSION"), path.display()),
                 // Standard error only by now (`attach_dir` gave up on the file); unlike `eprintln!`, never panics.
                 Err(e) => log::warn!("no log file: {e}"),
             },
@@ -309,7 +309,7 @@ fn main() -> eframe::Result<()> {
         app.open_path(f);
     }
     let mut viewport = egui::ViewportBuilder::default()
-        .with_title("GridCraft")
+        .with_title("Lunola Cella")
         .with_inner_size([1440.0, 900.0])
         .with_min_inner_size([640.0, 420.0])
         .with_app_id("ai.storyteller.gridcraft")
@@ -344,7 +344,7 @@ fn main() -> eframe::Result<()> {
     let pending = std::cell::Cell::new(Some(app));
     let run = |options: eframe::NativeOptions| {
         eframe::run_native(
-            "GridCraft",
+            "Lunola Cella",
             options,
             Box::new(|cc| {
                 let Some(mut app) = pending.take() else {
@@ -396,8 +396,8 @@ mod packaging_tests {
         v
     }
 
-    /// macOS Open With (`CFBundleDocumentTypes`) offers GridCraft for the same files as Windows
-    /// Open with, and GridCraft opens each of them. #321 added `.xlsb` and `.ods` on Windows and
+    /// macOS Open With (`CFBundleDocumentTypes`) offers Lunola Cella for the same files as Windows
+    /// Open with, and Lunola Cella opens each of them. #321 added `.xlsb` and `.ods` on Windows and
     /// Linux only.
     #[test]
     fn macos_and_windows_offer_the_same_file_types() {
@@ -408,7 +408,7 @@ mod packaging_tests {
         assert!(mac.iter().any(|e| e == "xlsx"), "Info.plist.in extensions not found: {mac:?}");
         assert_eq!(mac, win);
         for ext in &mac {
-            assert!(FileKind::from_path(&format!("book.{ext}")).is_some(), "GridCraft doesn't open .{ext}");
+            assert!(FileKind::from_path(&format!("book.{ext}")).is_some(), "Lunola Cella doesn't open .{ext}");
         }
     }
 }

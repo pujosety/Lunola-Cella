@@ -1,4 +1,4 @@
-//! GridCraft's icon set, drawn in code on a 16×16 design grid (original artwork; see
+//! Lunola Cella's icon set, drawn in code on a 16×16 design grid (original artwork; see
 //! ATTRIBUTION.md). Large ribbon icons use the same drawings at 32×32 with accent colours.
 
 use egui::epaint::{CubicBezierShape, PathShape, PathStroke};
@@ -185,7 +185,7 @@ impl G<'_> {
 }
 
 /// Accent palette for icons (our own).
-pub const GREEN: Color32 = Color32::from_rgb(0x10, 0x7C, 0x41);
+pub const GREEN: Color32 = Color32::from_rgb(0x35, 0xB7, 0x8C);
 pub const BLUE: Color32 = Color32::from_rgb(0x2B, 0x7C, 0xD3);
 pub const RED: Color32 = Color32::from_rgb(0xD1, 0x3B, 0x2F);
 pub const YELLOW: Color32 = Color32::from_rgb(0xF2, 0xC3, 0x2E);

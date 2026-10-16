@@ -62,9 +62,9 @@ impl Tokens {
             text: Color32::from_rgb(0x24, 0x24, 0x24),
             text_dim: Color32::from_rgb(0x61, 0x61, 0x61),
             text_disabled: Color32::from_rgb(0xB0, 0xB0, 0xB0),
-            accent: Color32::from_rgb(0x10, 0x7C, 0x41),
-            accent_dark: Color32::from_rgb(0x0B, 0x5E, 0x31),
-            accent_soft: Color32::from_rgb(0xDF, 0xF1, 0xE6),
+            accent: Color32::from_rgb(0x35, 0xB7, 0x8C),
+            accent_dark: Color32::from_rgb(0x2A, 0x9D, 0x76),
+            accent_soft: Color32::from_rgb(0xDF, 0xF5, 0xEE),
             hover: Color32::from_rgb(0xEB, 0xEB, 0xEB),
             pressed: Color32::from_rgb(0xDD, 0xDD, 0xDD),
             separator: Color32::from_rgb(0xE0, 0xE0, 0xE0),
@@ -75,10 +75,10 @@ impl Tokens {
             header_text: Color32::from_rgb(0x42, 0x42, 0x42),
             header_line: Color32::from_rgb(0xD6, 0xD6, 0xD6),
             header_sel_bg: Color32::from_rgb(0xE1, 0xE1, 0xE1),
-            header_sel_text: Color32::from_rgb(0x10, 0x7C, 0x41),
-            header_all_bg: Color32::from_rgb(0xC8, 0xE6, 0xD3),
-            sel_fill: Color32::from_rgba_unmultiplied(0x10, 0x7C, 0x41, 0x1C),
-            sel_border: Color32::from_rgb(0x10, 0x7C, 0x41),
+            header_sel_text: Color32::from_rgb(0x35, 0xB7, 0x8C),
+            header_all_bg: Color32::from_rgb(0xC8, 0xEC, 0xDD),
+            sel_fill: Color32::from_rgba_unmultiplied(0x35, 0xB7, 0x8C, 0x1C),
+            sel_border: Color32::from_rgb(0x35, 0xB7, 0x8C),
             input_bg: Color32::WHITE,
             input_border: Color32::from_rgb(0xD1, 0xD1, 0xD1),
             tab_bar: Color32::from_rgb(0xF3, 0xF3, 0xF3),
@@ -104,9 +104,9 @@ impl Tokens {
             text: Color32::from_rgb(0xEE, 0xEE, 0xEE),
             text_dim: Color32::from_rgb(0xB0, 0xB0, 0xB0),
             text_disabled: Color32::from_rgb(0x70, 0x70, 0x70),
-            accent: Color32::from_rgb(0x5C, 0xC5, 0x87),
-            accent_dark: Color32::from_rgb(0x3F, 0xA8, 0x6C),
-            accent_soft: Color32::from_rgb(0x23, 0x45, 0x31),
+            accent: Color32::from_rgb(0x35, 0xB7, 0x8C),
+            accent_dark: Color32::from_rgb(0x2A, 0x9D, 0x76),
+            accent_soft: Color32::from_rgb(0x1E, 0x3D, 0x2E),
             hover: Color32::from_rgb(0x42, 0x42, 0x42),
             pressed: Color32::from_rgb(0x4D, 0x4D, 0x4D),
             separator: Color32::from_rgb(0x48, 0x48, 0x48),
@@ -117,10 +117,10 @@ impl Tokens {
             header_text: Color32::from_rgb(0xCC, 0xCC, 0xCC),
             header_line: Color32::from_rgb(0x45, 0x45, 0x45),
             header_sel_bg: Color32::from_rgb(0x45, 0x45, 0x45),
-            header_sel_text: Color32::from_rgb(0x5C, 0xC5, 0x87),
-            header_all_bg: Color32::from_rgb(0x2E, 0x55, 0x3E),
-            sel_fill: Color32::from_rgba_unmultiplied(0x10, 0x7C, 0x41, 0x24),
-            sel_border: Color32::from_rgb(0x10, 0x7C, 0x41),
+            header_sel_text: Color32::from_rgb(0x35, 0xB7, 0x8C),
+            header_all_bg: Color32::from_rgb(0x1E, 0x4D, 0x38),
+            sel_fill: Color32::from_rgba_unmultiplied(0x35, 0xB7, 0x8C, 0x24),
+            sel_border: Color32::from_rgb(0x35, 0xB7, 0x8C),
             input_bg: Color32::from_rgb(0x1F, 0x1F, 0x1F),
             input_border: Color32::from_rgb(0x50, 0x50, 0x50),
             tab_bar: Color32::from_rgb(0x29, 0x29, 0x29),
@@ -702,8 +702,9 @@ pub fn apply(ctx: &egui::Context, dark: bool) {
     ctx.set_theme(if dark { egui::Theme::Dark } else { egui::Theme::Light });
     ctx.all_styles_mut(|s| {
         s.spacing.item_spacing = egui::vec2(6.0, 4.0);
-        s.spacing.button_padding = egui::vec2(6.0, 3.0);
-        s.spacing.interact_size.y = 22.0;
+        s.spacing.button_padding = egui::vec2(8.0, 3.0);
+        s.spacing.interact_size = egui::vec2(24.0, 22.0);
+        s.spacing.menu_margin = egui::Margin::same(6);
         s.text_styles.insert(egui::TextStyle::Body, ui_font(13.0));
         s.text_styles.insert(egui::TextStyle::Button, ui_font(13.0));
         s.text_styles.insert(egui::TextStyle::Small, ui_font(11.0));

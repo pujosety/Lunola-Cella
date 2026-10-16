@@ -23,4 +23,4 @@ jobs:
     uses: storytold/craft-common-actions/.github/workflows/windows-arm64.yml@main
     with:
       app-name: gridcraft
-      app-dir: GridCraft
+      app-dir: Lunola Cella

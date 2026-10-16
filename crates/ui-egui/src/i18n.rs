@@ -13,6 +13,7 @@ mod cs;
 mod de;
 mod es;
 mod fr;
+mod id;
 mod ko;
 mod pt;
 mod ru;
@@ -35,10 +36,11 @@ pub enum Language {
     Cs,
     Fr,
     Sr,
+    Id,
 }
 
 impl Language {
-    pub const ALL: [Self; 11] = [Self::En, Self::Es, Self::Zh, Self::Ja, Self::Ko, Self::Ru, Self::PtBr, Self::De, Self::Cs, Self::Fr, Self::Sr];
+    pub const ALL: [Self; 12] = [Self::En, Self::Es, Self::Zh, Self::Ja, Self::Ko, Self::Ru, Self::PtBr, Self::De, Self::Cs, Self::Fr, Self::Sr, Self::Id];
 
     /// The language's own name, shown in the switcher.
     pub fn name(self) -> &'static str {
@@ -54,6 +56,7 @@ impl Language {
             Self::Cs => "Čeština",
             Self::Fr => "Français",
             Self::Sr => "Srpski",
+            Self::Id => "Bahasa Indonesia",
         }
     }
 
@@ -71,6 +74,7 @@ impl Language {
             Self::Cs => "cs",
             Self::Fr => "fr",
             Self::Sr => "sr",
+            Self::Id => "id",
         }
     }
 
@@ -91,6 +95,7 @@ impl Language {
             "cs" => Some(Self::Cs),
             "fr" => Some(Self::Fr),
             "sr" => Some(Self::Sr),
+            "id" => Some(Self::Id),
             _ => None,
         }
     }
@@ -129,6 +134,7 @@ impl Language {
             Self::Cs => cs::translate(text),
             Self::Fr => fr::translate(text),
             Self::Sr => sr::translate(text),
+            Self::Id => id::translate(text),
         };
         translated.unwrap_or_else(|| text.rsplit_once('|').map_or(text, |(_, label)| label))
     }
@@ -411,7 +417,7 @@ const JAPANESE: &[(&str, &str)] = &[
     ("Command\nPalette", "コマンド パレット"),
     ("Agent\nControl", "エージェント制御"),
     ("Action\nJournal", "操作ジャーナル"),
-    ("About\nGridCraft", "GridCraft について"),
+    ("About\nLunola Cella", "Lunola Cella について"),
     ("Share", "共有"),
     ("Add Chart\nElement", "グラフ要素を追加"),
     ("Change\nChart Type", "グラフの種類の変更"),
