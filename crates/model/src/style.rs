@@ -122,7 +122,7 @@ pub struct Theme {
 }
 
 impl Default for Theme {
-    /// GridCraft's own default theme ("Craft"): original palette.
+    /// Lunola Cella's own default theme ("Craft"): original palette.
     fn default() -> Self {
         Theme {
             name: "Craft".into(),

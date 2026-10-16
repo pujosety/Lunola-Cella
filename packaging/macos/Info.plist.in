@@ -24,9 +24,9 @@
   <string>@SHORT_VERSION@</string>
   <key>CFBundleVersion</key>
   <string>@SHORT_VERSION@</string>
-  <key>GridCraftVersion</key>
+  <key>Lunola CellaVersion</key>
   <string>@VERSION@</string>
-  <key>GridCraftBuildCommit</key>
+  <key>Lunola CellaBuildCommit</key>
   <string>@BUILD_SHA@</string>
   <key>CFBundleIconFile</key>
   <string>gridcraft</string>
