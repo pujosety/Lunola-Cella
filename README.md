@@ -57,6 +57,7 @@
   <a href="#architecture">Architecture</a> ·
   <a href="#roadmap">Roadmap</a> ·
   <a href="#the-lunola-suite">The Lunola Suite</a> ·
+  <a href="#documentation">Documentation</a> ·
   <a href="#license-and-credits">License and credits</a>
 </p>
 
@@ -317,6 +318,13 @@ And [**Lunola**](https://lunola.ai/) itself, our AI image and video studio for c
   <a href="https://lunola.ai/apps">The Lunola Suite</a> ·
   <a href="https://lunola.ai/apps/cella">Lunola Cella</a>
 </p>
+
+## Documentation
+
+- **[CHANGELOG.md](CHANGELOG.md)** — version history and notable changes
+- **[KNOWN_ISSUES.md](KNOWN_ISSUES.md)** — known limitations and verification status
+- **[ROADMAP.md](ROADMAP.md)** — development roadmap and parity targets
+- **[DELIVERY.md](DELIVERY.md)** — delivery summary for this release
 
 ## License and credits
 
