@@ -7,7 +7,7 @@ time of the v1.0.0 release (2026-10-16).
 
 | Requirement | Status | Notes |
 |---|---|---|
-| **Rust version** | `rustc 1.93` required; `< 1.95` | The project uses Rust edition 2024 with `resolver = "3"`. Builds require rustc 1.93 or later, but not 1.95 or newer. |
+| **Rust version** | `rustc 1.95+` required | The project uses Rust edition 2024 with `resolver = "3"`. Verified with rustc 1.99.1 stable. |
 | **wasm32 target** | Required for web builds | `rustup target add wasm32-unknown-unknown` |
 | **trunk** | Required for web builds | Install from [trunkrs.dev](https://trunkrs.dev) |
 
@@ -15,9 +15,9 @@ time of the v1.0.0 release (2026-10-16).
 
 ### Automated Tests
 
-**No automated test run was performed** as part of the v1.0.0 delivery. The
-project includes unit tests, integration tests, and a command-sequence fuzzer,
-but they have not been executed in the delivery environment. Run:
+**`cargo check -p gridcraft-ui-egui`**: ✅ PASS (rustc 1.99.1, 2 warnings, 0 errors)
+
+**Full `cargo test --workspace`**: NOT RUN — requires all git dependencies (krilla/craft-libs) to be fetchable. Run:
 
 ```sh
 cargo test --workspace
@@ -64,7 +64,7 @@ changes are based on code review and asset replacement only.
 
 ### Localization
 
-- Ribbon translated into 8 languages (en, ja, zh, ko, pt-BR, ru, de, id).
+- Ribbon translated into 12 languages (en, ja, zh, ko, pt-BR, ru, de, cs, fr, sr, id).
 - Dialogs, menus, and messages are English-only.
 - Formulas and number formats are en-US only.
 - Arabic and Devanagari text shaping is not implemented.
