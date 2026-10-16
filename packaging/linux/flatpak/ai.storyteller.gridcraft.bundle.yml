@@ -1,5 +1,6 @@
 # Flatpak manifest for the single-file bundle attached to every GitHub release
 # (gridcraft-<version>-linux-<arch>.flatpak). Build it with packaging/linux/flatpak-bundle.sh.
+# Lunola Cella branding.
 #
 # It repackages the release's own Linux tarball (gridcraft-<version>-linux-<arch>.tar.gz,
 # built on Ubuntu 22.04 by package.sh) instead of compiling Rust inside flatpak-builder: no

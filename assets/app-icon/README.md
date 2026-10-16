@@ -1,10 +1,10 @@
-# GridCraft app icon (PLACEHOLDER)
+# Lunola Cella app icon (PLACEHOLDER)
 
-**This icon is temporary.** Every Crafting App's icon is an engraved creature portrait that the
-product owner makes (craftrules `standards/icon-design.md`); GridCraft's hasn't been made yet.
+**This icon is temporary.** Every Lunola App's icon is an engraved creature portrait that the
+product owner makes (craftrules `standards/icon-design.md`); Lunola Cella's hasn't been made yet.
 Until it is, this placeholder stands in: a simple ledger page with a header row, a row-number
 column, a selected cell with its fill handle and a double rule under a total, on a full-bleed
-GridCraft-green tile. It is original geometry written by hand for this repository, deliberately
+Lunola Cella-green tile. It is original geometry written by hand for this repository, deliberately
 not modelled on any vendor's spreadsheet logo (no letters, no "X", no overlapping panels).
 
 When the owner's art arrives, replace `gridcraft.svg`, run `packaging/icons.sh`, update this
@@ -18,10 +18,9 @@ Exactly three colours:
 |---|---|---|
 | Ink | `#0b0b0c` | Line work and contour |
 | Paper | `#efe9dc` | The page |
-| GridCraft green (app colour, **proposed**) | `#1f9d55` | The full-bleed field and the header cells |
+| Lunola Cella green (app colour, **proposed**) | `#35B78C` | The full-bleed field and the header cells |
 
-The app colour is a proposal pending the owner's approval: GridCraft green `#1f9d55`, with ink
-(darker) variant `#147a40` for text and accents on light backgrounds. It differs from
+The app colour is a proposal pending the owner's approval: Lunola Cella green `#35B78C`. It differs from
 DesignCraft's `#7bb51c`.
 
 ## Geometry
