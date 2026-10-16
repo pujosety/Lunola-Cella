@@ -1157,12 +1157,14 @@ impl SheetApp {
             let _ = self.session.run("file.save", json!({}));
         }
         // Window title.
-        if let Some(d) = self.session.active() {
-            let title = format!("{}{}", d.display_title(), if d.is_dirty() { " — Edited" } else { "" });
-            if self.grid.last_title.as_deref() != Some(title.as_str()) {
-                ctx.send_viewport_cmd(egui::ViewportCommand::Title(title.clone()));
-                self.grid.last_title = Some(title);
-            }
+        let title = if let Some(d) = self.session.active() {
+            format!("{}{}", d.display_title(), if d.is_dirty() { " — Edited" } else { "" })
+        } else {
+            "Lunola Cella".to_string()
+        };
+        if self.grid.last_title.as_deref() != Some(title.as_str()) {
+            ctx.send_viewport_cmd(egui::ViewportCommand::Title(title.clone()));
+            self.grid.last_title = Some(title);
         }
     }
 
