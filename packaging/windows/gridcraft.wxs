@@ -30,8 +30,8 @@
 
     <Icon Id="GridcraftIcon.ico" SourceFile="$(var.IconPath)" />
     <Property Id="ARPPRODUCTICON" Value="GridcraftIcon.ico" />
-    <Property Id="ARPURLINFOABOUT" Value="https://lunola.ai" />
-    <Property Id="ARPURLUPDATEINFO" Value="https://lunola.ai" />
+    <Property Id="ARPURLINFOABOUT" Value="https://getlunola.com/apps/lunola-cella" />
+    <Property Id="ARPURLUPDATEINFO" Value="https://getlunola.com/apps/lunola-cella" />
     <Property Id="ARPHELPLINK" Value="https://discord.gg/lunola" />
 
     <!-- An explicit command-line value wins. Otherwise retain the previous installation's
