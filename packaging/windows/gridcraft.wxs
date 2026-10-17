@@ -40,7 +40,7 @@
     <Property Id="DESKTOPSHORTCUT" Secure="yes" />
     <Property Id="SAVEDDESKTOPSHORTCUT" Secure="yes">
       <RegistrySearch Id="FindDesktopShortcutPreference" Root="HKLM"
-          Key="Software\Lunola Cella\Installer" Name="DesktopShortcut" Type="raw" />
+          Key="Software\LunolaCella\Installer" Name="DesktopShortcut" Type="raw" />
     </Property>
     <SetProperty Id="DESKTOPSHORTCUT" Action="LoadDesktopShortcutPreference" Value="1"
         After="AppSearch" Sequence="first"
@@ -171,12 +171,12 @@
 
         <!-- ProgIds: how Explorer opens a file with Lunola Cella. Nothing here sets HKCR\.<ext>'s
              default value, so the user's current default app is left alone. -->
-        <RegistryValue Root="HKLM" Key="Software\Classes\Lunola Cella.Workbook" Value="Lunola Cella Workbook" Type="string" />
-        <RegistryValue Root="HKLM" Key="Software\Classes\Lunola Cella.Workbook\DefaultIcon" Value="&quot;[#GridcraftExe]&quot;,0" Type="string" />
-        <RegistryValue Root="HKLM" Key="Software\Classes\Lunola Cella.Workbook\shell\open\command" Value="&quot;[#GridcraftExe]&quot; &quot;%1&quot;" Type="string" />
-        <RegistryValue Root="HKLM" Key="Software\Classes\Lunola Cella.TextData" Value="Lunola Cella Text Data" Type="string" />
-        <RegistryValue Root="HKLM" Key="Software\Classes\Lunola Cella.TextData\DefaultIcon" Value="&quot;[#GridcraftExe]&quot;,0" Type="string" />
-        <RegistryValue Root="HKLM" Key="Software\Classes\Lunola Cella.TextData\shell\open\command" Value="&quot;[#GridcraftExe]&quot; &quot;%1&quot;" Type="string" />
+        <RegistryValue Root="HKLM" Key="Software\Classes\LunolaCella.Workbook" Value="Lunola Cella Workbook" Type="string" />
+        <RegistryValue Root="HKLM" Key="Software\Classes\LunolaCella.Workbook\DefaultIcon" Value="&quot;[#GridcraftExe]&quot;,0" Type="string" />
+        <RegistryValue Root="HKLM" Key="Software\Classes\LunolaCella.Workbook\shell\open\command" Value="&quot;[#GridcraftExe]&quot; &quot;%1&quot;" Type="string" />
+        <RegistryValue Root="HKLM" Key="Software\Classes\LunolaCella.TextData" Value="Lunola Cella Text Data" Type="string" />
+        <RegistryValue Root="HKLM" Key="Software\Classes\LunolaCella.TextData\DefaultIcon" Value="&quot;[#GridcraftExe]&quot;,0" Type="string" />
+        <RegistryValue Root="HKLM" Key="Software\Classes\LunolaCella.TextData\shell\open\command" Value="&quot;[#GridcraftExe]&quot; &quot;%1&quot;" Type="string" />
 
         <!-- "Open with": Windows reads only the value names under OpenWithProgids; the data is
              ignored (WiX rejects an empty Value, so it repeats the ProgId). -->
@@ -189,13 +189,13 @@
         <RegistryValue Root="HKLM" Key="Software\Classes\.tsv\OpenWithProgids" Name="Lunola Cella.TextData" Value="Lunola Cella.TextData" Type="string" />
 
         <!-- Settings > Default apps: lets the user pick Lunola Cella for these types. -->
-        <RegistryValue Root="HKLM" Key="Software\Lunola Cella\Capabilities" Name="ApplicationName" Value="Lunola Cella" Type="string" />
-        <RegistryValue Root="HKLM" Key="Software\Lunola Cella\Capabilities" Name="ApplicationDescription" Value="Open-source spreadsheet for .xlsx, CSV and TSV files" Type="string" />
-        <RegistryValue Root="HKLM" Key="Software\Lunola Cella\Capabilities\FileAssociations" Name=".xlsx" Value="Lunola Cella.Workbook" Type="string" />
-        <RegistryValue Root="HKLM" Key="Software\Lunola Cella\Capabilities\FileAssociations" Name=".xlsm" Value="Lunola Cella.Workbook" Type="string" />
-        <RegistryValue Root="HKLM" Key="Software\Lunola Cella\Capabilities\FileAssociations" Name=".csv" Value="Lunola Cella.TextData" Type="string" />
-        <RegistryValue Root="HKLM" Key="Software\Lunola Cella\Capabilities\FileAssociations" Name=".tsv" Value="Lunola Cella.TextData" Type="string" />
-        <RegistryValue Root="HKLM" Key="Software\RegisteredApplications" Name="Lunola Cella" Value="Software\Lunola Cella\Capabilities" Type="string" />
+        <RegistryValue Root="HKLM" Key="Software\LunolaCella\Capabilities" Name="ApplicationName" Value="Lunola Cella" Type="string" />
+        <RegistryValue Root="HKLM" Key="Software\LunolaCella\Capabilities" Name="ApplicationDescription" Value="Open-source spreadsheet for .xlsx, CSV and TSV files" Type="string" />
+        <RegistryValue Root="HKLM" Key="Software\LunolaCella\Capabilities\FileAssociations" Name=".xlsx" Value="Lunola Cella.Workbook" Type="string" />
+        <RegistryValue Root="HKLM" Key="Software\LunolaCella\Capabilities\FileAssociations" Name=".xlsm" Value="Lunola Cella.Workbook" Type="string" />
+        <RegistryValue Root="HKLM" Key="Software\LunolaCella\Capabilities\FileAssociations" Name=".csv" Value="Lunola Cella.TextData" Type="string" />
+        <RegistryValue Root="HKLM" Key="Software\LunolaCella\Capabilities\FileAssociations" Name=".tsv" Value="Lunola Cella.TextData" Type="string" />
+        <RegistryValue Root="HKLM" Key="Software\RegisteredApplications" Name="Lunola Cella" Value="Software\LunolaCella\Capabilities" Type="string" />
       </Component>
 
       <Component Id="GridcraftCli">
@@ -205,7 +205,7 @@
       <!-- Persist both on and off, independently of the optional shortcut. AppSearch reads
            this before MajorUpgrade removes the previous product. -->
       <Component Id="DesktopShortcutPreference">
-        <RegistryValue Root="HKLM" Key="Software\Lunola Cella\Installer" Name="DesktopShortcut"
+        <RegistryValue Root="HKLM" Key="Software\LunolaCella\Installer" Name="DesktopShortcut"
             Value="[DESKTOPSHORTCUT]" Type="string" KeyPath="yes" />
       </Component>
       <Component Id="DesktopShortcutComponent" Directory="DesktopFolder" Condition="DESKTOPSHORTCUT = &quot;1&quot;">
@@ -213,7 +213,7 @@
             Target="[#GridcraftExe]" WorkingDirectory="INSTALLFOLDER" Icon="GridcraftIcon.ico" IconIndex="0" />
         <!-- HKMU resolves to HKLM for this per-machine package, so another account can
              uninstall the marker too. MSI root -1 also satisfies ICE43 for this shortcut. -->
-        <RegistryValue Root="HKMU" Key="Software\Lunola Cella\Installer" Name="DesktopShortcutComponent"
+        <RegistryValue Root="HKMU" Key="Software\LunolaCella\Installer" Name="DesktopShortcutComponent"
             Value="1" Type="integer" KeyPath="yes" />
       </Component>
     </ComponentGroup>
