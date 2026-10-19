@@ -174,8 +174,7 @@ fn tree() -> Vec<(&'static str, Vec<Entry>)> {
             vec![
                 ("Agent Control (MCP)…", "dialog:agents", None),
                 ("Contributors…", "dialog:about:Contributors", None),
-                ("Lunola Cella on lunola.ai", "url:https://lunola.ai", None),
-                ("Join the Lunola Discord…", "url:https://discord.gg/lunola", None),
+                ("Lunola Cella on lunola.wasmer.app", "url:https://lunola.wasmer.app", None),
             ],
         ),
     ]

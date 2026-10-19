@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://lunola.ai/">
+  <a href="https://lunola.wasmer.app/">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="docs/brand/lunola-logo-white.svg">
       <img alt="Lunola" src="docs/brand/lunola-logo.svg" width="200">
@@ -32,9 +32,9 @@
 </p>
 
 <p align="center">
-  <a href="https://lunola.ai"><b>Lunola Cella on lunola.ai</b></a> ·
-  <a href="https://lunola.ai/">Lunola</a> ·
-  <a href="https://lunola.ai/apps">All Apps</a>
+  <a href="https://lunola.wasmer.app"><b>Lunola Cella on lunola.wasmer.app</b></a> ·
+  <a href="https://lunola.wasmer.app/">Lunola</a> ·
+  <a href="https://lunola.wasmer.app/apps">All Apps</a>
 </p>
 
 <br>
@@ -281,21 +281,21 @@ handling again for troubleshooting.
 ## The Lunola Suite
 
 Lunola Cella is one of the **Lunola Apps**: free, open-source creative tools from the
-[Lunola](https://lunola.ai/) team, each written from scratch in Rust and each able to
+[Lunola](https://lunola.wasmer.app/) team, each written from scratch in Rust and each able to
 stand on its own.
 
 | | App | What it's for | Code | Learn more |
 |:-:|---|---|---|---|
-| <img src="https://raw.githubusercontent.com/storytold/photocraft/main/assets/app-icon/hicolor/64x64/apps/ai.storyteller.photocraft.png" alt="" width="32" height="32"> | **PhotoCraft** | Image editing: layers, masks, type and real PSD files | [GitHub](https://github.com/storytold/photocraft) | [Website](https://lunola.ai/apps/photocraft) |
-| <img src="https://raw.githubusercontent.com/storytold/vectorcraft/main/assets/app-icon/hicolor/64x64/apps/ai.storyteller.vectorcraft.png" alt="" width="32" height="32"> | **VectorCraft** | Vector illustration | [GitHub](https://github.com/storytold/vectorcraft) | [Website](https://lunola.ai/apps/vectorcraft) |
-| <img src="https://raw.githubusercontent.com/storytold/filmcraft/main/assets/app-icon/hicolor/64x64/apps/ai.storyteller.filmcraft.png" alt="" width="32" height="32"> | **FilmCraft** | Video editing, color and sound | [GitHub](https://github.com/storytold/filmcraft) | [Website](https://lunola.ai/apps/filmcraft) |
-| <img src="https://raw.githubusercontent.com/storytold/lightcraft/main/assets/app-icon/hicolor/64x64/apps/ai.storyteller.lightcraft.png" alt="" width="32" height="32"> | **LightCraft** | Photo library and raw development | [GitHub](https://github.com/storytold/lightcraft) | [Website](https://lunola.ai/apps/lightcraft) |
-| <img src="https://raw.githubusercontent.com/storytold/pdfcraft/main/assets/app-icon/hicolor/64x64/apps/ai.storyteller.pdfcraft.png" alt="" width="32" height="32"> | **PdfCraft** | Reading, organizing and protecting PDFs | [GitHub](https://github.com/storytold/pdfcraft) | [Website](https://lunola.ai/apps/pdfcraft) |
-| <img src="https://raw.githubusercontent.com/storytold/effectcraft/main/assets/app-icon/hicolor/64x64/apps/ai.storyteller.effectcraft.png" alt="" width="32" height="32"> | **EffectCraft** | Motion graphics and visual effects | [GitHub](https://github.com/storytold/effectcraft) | [Website](https://lunola.ai/apps/effectcraft) |
-| <img src="https://raw.githubusercontent.com/storytold/designcraft/main/assets/app-icon/hicolor/64x64/apps/ai.storyteller.designcraft.png" alt="" width="32" height="32"> | **DesignCraft** | Page layout and publishing | [GitHub](https://github.com/storytold/designcraft) | [Website](https://lunola.ai/apps/designcraft) |
-| <img src="https://raw.githubusercontent.com/pujosety/Lunola-Cella/main/assets/app-icon/hicolor/64x64/apps/ai.storyteller.gridcraft.png" alt="" width="32" height="32"> | **Lunola Cella** | **Spreadsheets and data · you are here** | [GitHub](https://github.com/pujosety/Lunola-Cella) | [Website](https://lunola.ai/apps/cella) |
+| <img src="https://raw.githubusercontent.com/storytold/photocraft/main/assets/app-icon/hicolor/64x64/apps/ai.storyteller.photocraft.png" alt="" width="32" height="32"> | **PhotoCraft** | Image editing: layers, masks, type and real PSD files | [GitHub](https://github.com/storytold/photocraft) | [Website](https://lunola.wasmer.app/apps/photocraft) |
+| <img src="https://raw.githubusercontent.com/storytold/vectorcraft/main/assets/app-icon/hicolor/64x64/apps/ai.storyteller.vectorcraft.png" alt="" width="32" height="32"> | **VectorCraft** | Vector illustration | [GitHub](https://github.com/storytold/vectorcraft) | [Website](https://lunola.wasmer.app/apps/vectorcraft) |
+| <img src="https://raw.githubusercontent.com/storytold/filmcraft/main/assets/app-icon/hicolor/64x64/apps/ai.storyteller.filmcraft.png" alt="" width="32" height="32"> | **FilmCraft** | Video editing, color and sound | [GitHub](https://github.com/storytold/filmcraft) | [Website](https://lunola.wasmer.app/apps/filmcraft) |
+| <img src="https://raw.githubusercontent.com/storytold/lightcraft/main/assets/app-icon/hicolor/64x64/apps/ai.storyteller.lightcraft.png" alt="" width="32" height="32"> | **LightCraft** | Photo library and raw development | [GitHub](https://github.com/storytold/lightcraft) | [Website](https://lunola.wasmer.app/apps/lightcraft) |
+| <img src="https://raw.githubusercontent.com/storytold/pdfcraft/main/assets/app-icon/hicolor/64x64/apps/ai.storyteller.pdfcraft.png" alt="" width="32" height="32"> | **PdfCraft** | Reading, organizing and protecting PDFs | [GitHub](https://github.com/storytold/pdfcraft) | [Website](https://lunola.wasmer.app/apps/pdfcraft) |
+| <img src="https://raw.githubusercontent.com/storytold/effectcraft/main/assets/app-icon/hicolor/64x64/apps/ai.storyteller.effectcraft.png" alt="" width="32" height="32"> | **EffectCraft** | Motion graphics and visual effects | [GitHub](https://github.com/storytold/effectcraft) | [Website](https://lunola.wasmer.app/apps/effectcraft) |
+| <img src="https://raw.githubusercontent.com/storytold/designcraft/main/assets/app-icon/hicolor/64x64/apps/ai.storyteller.designcraft.png" alt="" width="32" height="32"> | **DesignCraft** | Page layout and publishing | [GitHub](https://github.com/storytold/designcraft) | [Website](https://lunola.wasmer.app/apps/designcraft) |
+| <img src="https://raw.githubusercontent.com/pujosety/Lunola-Cella/main/assets/app-icon/hicolor/64x64/apps/ai.storyteller.gridcraft.png" alt="" width="32" height="32"> | **Lunola Cella** | **Spreadsheets and data · you are here** | [GitHub](https://github.com/pujosety/Lunola-Cella) | [Website](https://lunola.wasmer.app/apps/cella) |
 
-And [**Lunola**](https://lunola.ai/) itself, our AI image and video studio for creators who want real control.
+And [**Lunola**](https://lunola.wasmer.app/) itself, our AI image and video studio for creators who want real control.
 
 <br>
 
@@ -314,9 +314,9 @@ And [**Lunola**](https://lunola.ai/) itself, our AI image and video studio for c
 
 <p align="center">
   <a href="https://discord.gg/lunola"><b>discord.gg/lunola</b></a> ·
-  <a href="https://lunola.ai/">lunola.ai</a> ·
-  <a href="https://lunola.ai/apps">The Lunola Suite</a> ·
-  <a href="https://lunola.ai/apps/cella">Lunola Cella</a>
+  <a href="https://lunola.wasmer.app/">lunola.wasmer.app</a> ·
+  <a href="https://lunola.wasmer.app/apps">The Lunola Suite</a> ·
+  <a href="https://lunola.wasmer.app/apps/cella">Lunola Cella</a>
 </p>
 
 ## Documentation
@@ -348,6 +348,6 @@ Forks and modified versions must remove them.
 <br>
 
 <p align="center">
-  <a href="https://lunola.ai/"><img alt="Lunola" src="docs/brand/lunola-mark.svg" width="28"></a><br>
-  <sub>Made by the <a href="https://lunola.ai/">Lunola</a> team and community.</sub>
+  <a href="https://lunola.wasmer.app/"><img alt="Lunola" src="docs/brand/lunola-mark.svg" width="40" height="40"></a>
+  <sub>Made by the <a href="https://lunola.wasmer.app/">Lunola</a> team and community.</sub>
 </p>

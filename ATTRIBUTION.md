@@ -8,14 +8,14 @@ Generated-in-code art is original and has no file to list: the UI icon set (`cra
 
 | Asset | Author | Source | Licence | Notes |
 |---|---|---|---|---|
-| `docs/brand/artcraft-logo.svg` | Lunola Team | craftrules `assets/brand/` | Lunola brand terms (`docs/brand/LICENSE-brand.txt`) | Trademark, not open source |
-| `docs/brand/artcraft-logo.png` | Lunola Team | craftrules `assets/brand/` | Lunola brand terms | Trademark |
-| `docs/brand/artcraft-logo-white.svg` | Lunola Team | craftrules `assets/brand/` | Lunola brand terms | Trademark |
-| `docs/brand/artcraft-logo-white.png` | Lunola Team | craftrules `assets/brand/` | Lunola brand terms | Trademark |
-| `docs/brand/artcraft-mark.svg` | Lunola Team | craftrules `assets/brand/` | Lunola brand terms | Trademark |
-| `docs/brand/artcraft-mark.png` | Lunola Team | craftrules `assets/brand/` | Lunola brand terms | Trademark |
-| `docs/brand/artcraft-mark-black.svg` | Lunola Team | craftrules `assets/brand/` | Lunola brand terms | Trademark |
-| `docs/brand/artcraft-mark-black.png` | Lunola Team | craftrules `assets/brand/` | Lunola brand terms | Trademark |
+| `docs/brand/lunola-logo.svg` | Lunola Team | craftrules `assets/brand/` | Lunola brand terms (`docs/brand/LICENSE-brand.txt`) | Trademark, not open source |
+| `docs/brand/lunola-logo.png` | Lunola Team | craftrules `assets/brand/` | Lunola brand terms | Trademark |
+| `docs/brand/lunola-logo-white.svg` | Lunola Team | craftrules `assets/brand/` | Lunola brand terms | Trademark |
+| `docs/brand/lunola-logo-white.png` | Lunola Team | craftrules `assets/brand/` | Lunola brand terms | Trademark |
+| `docs/brand/lunola-mark.svg` | Lunola Team | craftrules `assets/brand/` | Lunola brand terms | Trademark |
+| `docs/brand/lunola-mark.png` | Lunola Team | craftrules `assets/brand/` | Lunola brand terms | Trademark |
+| `docs/brand/lunola-mark-black.svg` | Lunola Team | craftrules `assets/brand/` | Lunola brand terms | Trademark |
+| `docs/brand/lunola-mark-black.png` | Lunola Team | craftrules `assets/brand/` | Lunola brand terms | Trademark |
 | `docs/brand/LICENSE-brand.txt` | (licence text) | craftrules | — | |
 | `assets/app-icon/gridcraft.svg` | Lunola Cella contributors | original (hand-written SVG; `packaging/icons.sh`) | MIT OR Apache-2.0 (`assets/app-icon/LICENSE.txt`) | PLACEHOLDER app icon (ledger page); replaced by the owner's creature art later |
 | `packaging/macos/dmg/background.svg` | @XusBadia | original (hand-written SVG, derived from the Lunola Cella app icon `assets/app-icon/gridcraft.svg`, referenced via `<image>`, not copied; text is outlined glyph paths; `packaging/macos/dmg/generate.py` renders it to `background.tiff`) | MIT OR Apache-2.0 (`LICENSE-MIT`, `LICENSE-APACHE`) | Lunola Cella macOS DMG window background for the Finder window; added 2026-10-08 |
