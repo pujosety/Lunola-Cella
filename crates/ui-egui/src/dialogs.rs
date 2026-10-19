@@ -1487,7 +1487,7 @@ fn about(ui: &mut egui::Ui, d: &mut Dialog) {
             ui.label(format!("Version {}", env!("CARGO_PKG_VERSION")));
             ui.add_space(4.0);
             ui.label("A clean-room, open-source, Rust-native spreadsheet. Part of Lunola. Every Cell Counts.");
-            ui.hyperlink_to("lunola.ai", "https://lunola.ai");
+            ui.hyperlink_to("lunola.wasmer.app", "https://lunola.wasmer.app");
         }
     }
 }
