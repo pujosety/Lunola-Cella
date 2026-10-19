@@ -33,14 +33,20 @@ pub(super) fn translate(text: &str) -> Option<&'static str> {
         "Font Color" => "Warna Font",
         "Borders" => "Bingkai",
         "Top
-Align" => "Atur
-Atas",
+Align" => {
+            "Atur
+Atas"
+        }
         "Middle
-Align" => "Atur
-Tengah",
+Align" => {
+            "Atur
+Tengah"
+        }
         "Bottom
-Align" => "Atur
-Bawah",
+Align" => {
+            "Atur
+Bawah"
+        }
         "Left" => "Kiri",
         "Right" => "Kanan",
         "Center" => "Tengah",
@@ -321,26 +327,40 @@ Bawah",
         "Tab|Insert" => "Inserir",
         "AutoSave" => "Simpan Otomatis",
         "Insert
-Slicer" => "Sisipkan
-Slicer",
+Slicer" => {
+            "Sisipkan
+Slicer"
+        }
         "Pen
-Black" => "Pena
-Hitam",
+Black" => {
+            "Pena
+Hitam"
+        }
         "Pen
-Blue" => "Pena
-Biru",
+Blue" => {
+            "Pena
+Biru"
+        }
         "Pen
-Red" => "Pena
-Merah",
+Red" => {
+            "Pena
+Merah"
+        }
         "Protect
-Sheet" => "Lindungi
-Lembar",
+Sheet" => {
+            "Lindungi
+Lembar"
+        }
         "Watch
-Window" => "Jendela
-Pengawas",
+Window" => {
+            "Jendela
+Pengawas"
+        }
         "Workbook
-Statistics" => "Statistik
-Buku Kerja",
+Statistics" => {
+            "Statistik
+Buku Kerja"
+        }
         "£ English (United Kingdom)" => "£ Inggris (Inggris Raya)",
         "¥ Japanese" => "¥ Jepang",
         "€ Euro" => "€ Euro",
